@@ -27,10 +27,12 @@ final class ViewController: UIViewController {
 // MARK: - 小工具
 private extension ViewController {
     
+    /// 初始化
     func initSetting() {
         metronome = WWMetronome.build()
     }
     
+    /// 啟動節拍器
     func start() {
         
         metronome?.start(withBPM: 120) { [weak self] info in
@@ -40,6 +42,7 @@ private extension ViewController {
         }
     }
     
+    /// 停止節拍器
     func stop() {
         metronome?.stop()
     }
