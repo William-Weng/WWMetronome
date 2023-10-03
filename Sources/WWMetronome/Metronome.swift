@@ -23,7 +23,7 @@ open class WWMetronome {
         
         /// 說明
         /// - Returns: String
-        func message() -> String {
+        public func message() -> String {
             
             switch self {
             case .beat1_4: return "1/4拍"
@@ -35,7 +35,7 @@ open class WWMetronome {
         
         /// 一小節有幾拍
         /// - Returns: UInt
-        func value() -> UInt {
+        public func value() -> UInt {
          
             switch self {
             case .beat1_4: return 1
@@ -54,7 +54,7 @@ open class WWMetronome {
         
         /// 節拍聲 (中文)
         /// - Returns: String
-        func message() -> String {
+        public func message() -> String {
             
             switch self {
             case .di: return "滴"
