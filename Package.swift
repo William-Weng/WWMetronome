@@ -1,4 +1,4 @@
-// swift-tools-version:5.7
+// swift-tools-version:5.6
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -11,9 +11,10 @@ let package = Package(
     products: [
         .library(name: "WWMetronome", targets: ["WWMetronome"]),
     ],
-    dependencies: [],
+    dependencies: [
+    ],
     targets: [
-        .target(name: "WWMetronome", dependencies: []),
+        .target(name: "WWMetronome", resources: [.copy("Privacy")]),
     ],
     swiftLanguageVersions: [
         .v5
