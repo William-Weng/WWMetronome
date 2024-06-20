@@ -14,7 +14,8 @@ dependencies: [
 ]
 ```
 
-### Function - 可用函式|函式|功能|
+### Function - 可用函式
+|函式|功能|
 |-|-|
 |build()|產生WWMetronome物件|
 |start(withBPM:rhythm:mode:result:)|啟動節拍器 (計數)|
